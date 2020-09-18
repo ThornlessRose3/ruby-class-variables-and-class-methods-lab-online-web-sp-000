@@ -46,6 +46,14 @@ class Song
   
   def self.artist_count
     hist_art = {}
+      @@artists.each do |x|
+      if hist_art.include?(x)
+        hist_art[x] += 1
+      else
+        hist_art[x] = 1
+      end
+    end
+    return hist_art
   end
 
 end
