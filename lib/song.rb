@@ -43,6 +43,7 @@ class Song
         hist_gen[x] = 1
       end
     end
+    return hist_gen
   end
   
   def self.artist_count
