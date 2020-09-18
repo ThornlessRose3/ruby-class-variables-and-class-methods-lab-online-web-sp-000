@@ -36,9 +36,7 @@ class Song
     hist_gen = {}
     @@genres.each do |x|
       if hist_gen.include?(x)
-        int = hist_gen[x]
-        int++
-        hist_gen[x] = int
+        hist_gen[x] += 1
       else
         hist_gen[x] = 1
       end
